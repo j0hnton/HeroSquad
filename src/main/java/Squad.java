@@ -5,6 +5,6 @@ public class Squad{
         mDescription=description;
     }
     public String getDescription(){
-        return mDescription
+        return mDescription;
     }
 }
