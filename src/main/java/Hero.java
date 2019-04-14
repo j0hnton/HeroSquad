@@ -5,6 +5,6 @@ public class Hero{
         mDescription=description;
     }
     public String getDescription(){
-        return mDescription;
+        return mDescription
     }
 }
