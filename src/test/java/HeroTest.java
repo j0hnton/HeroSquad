@@ -12,7 +12,7 @@ public class HeroTest {
     @Test
     public void Hero_instantiatesWithDescription_String() {
         Hero myHero = new Hero("A very charismatic superhero");
-        assertEquals("A very charismatic superhero", myHero.getDescription())
+        assertEquals("A very charismatic superhero", myHero.getDescription());
     }
 
 }
