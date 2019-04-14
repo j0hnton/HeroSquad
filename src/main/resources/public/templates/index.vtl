@@ -1,4 +1,30 @@
 <h1>HEROES OF TOMORROW</h1>
+<div class="row">
+   <div
+</div>
+
+<p>Heroe's Name</p>
+ <select>
+   <option>Thor<option>
+   <option>Superman<option>
+   <option>Hulk<option>
+ </select>
+ <button type="submit" class="btn btn-info">Add Hero</button>
+
+<br>
+<p>Heroe's Skill</p>
+<select
+   <option>Lightning<option>
+   <option>Flying<option>
+   <option>Smashing<option>
+ </select>
+ <button type="submit" class="btn btn-info">Submit skill</button>
+<br>
+
+<form>
+ <input id="heroname" name="heroeage" type="number" placeholder="Heroe's age">
+ <button type="submit" class="btn btn-info">Submit Age</button>
+</form>
 #if ($Hero)
   <ul>
     #foreach ($Hero in $Hero)
@@ -6,29 +32,5 @@
     #end
   </ul>
 #else
-  <p>No Heroes!</p>
+  <p>No Heroes selected!</p>
 #end
-
-<p>HEROES</p>
-
-<div class="row">
-   <div
-</div>
-
-<form action="/display" method="post">
- <label for="description">Hero name</label><br><br>
- <input id="heroname" name="heroname" type="text">
- <select>
-   <option>one<option>
-   <option>two<option>
-   <option>three<option>
- </select>
- <button type="submit" class="btn btn-info">Add Hero</button>
-<br>
-
-<form action="/tasks" method="post">
-  <label for="description">Select heroe's skill.</label><br><br>
-  <input id="description" name="description" type="text">
-
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
