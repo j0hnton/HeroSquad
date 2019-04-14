@@ -1,0 +1,34 @@
+<h1>HEROES OF TOMORROW</h1>
+#if ($Hero)
+  <ul>
+    #foreach ($Hero in $Hero)
+      <li>$Hero.getDescription()</li>
+    #end
+  </ul>
+#else
+  <p>No Heroes!</p>
+#end
+
+<p>HEROES</p>
+
+<div class="row">
+   <div
+</div>
+
+<form action="/display" method="post">
+ <label for="description">Hero name</label><br><br>
+ <input id="heroname" name="heroname" type="text">
+ <select>
+   <option>one<option>
+   <option>two<option>
+   <option>three<option>
+ </select>
+ <button type="submit" class="btn btn-info">Add Hero</button>
+<br>
+
+<form action="/tasks" method="post">
+  <label for="description">Select heroe's skill.</label><br><br>
+  <input id="description" name="description" type="text">
+
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
