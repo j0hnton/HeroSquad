@@ -1,0 +1,24 @@
+ <h2>SQUAD</h1>
+
+
+<div class="input-form">
+    <form action="/Squadlist.vtl" method="post">
+
+        <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+
+        <label for="name">Squad Name</label>
+
+        <input id="name" name="name" type="text" class="form-control">
+
+        <label for="age">Maximum Number</label>
+        <input id="age" name="age" type="number" class="form-control">
+
+        <label for="strength">Aim</label>
+         <select id="skill" name="heroskill">
+                   <option>Fight Sexism<option>
+                   <option>Fight computer illiteracy<option>
+                   <option>Fight corruption<option>
+                 </select>
+        <button type="submit" class="btn btn-success"> Add Squad</button>
+    </form>
+</div>

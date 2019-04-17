@@ -28,10 +28,18 @@ public class App {
 
         },
                 new VelocityTemplateEngine());
-        get("/layout", (request, response) -> {
+        get("/Squad.vtl", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "public/templates/layout.vtl");
+            model.put("template", "public/templates/Squad.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
+
+        get("/Squadlist.vtl", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("template", "public/templates/Squadlist.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+
     }
 }

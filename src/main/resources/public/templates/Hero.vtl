@@ -1,0 +1,37 @@
+ <h2>HERO</h1>
+
+
+<div class="input-form">
+    <form action="/heroes" method="post">
+
+        <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
+
+        <label for="name">Name</label>
+         <select id="hero" name="heroname">
+           <option>Thor<option>
+           <option>Superman<option>
+           <option>Hulk<option>
+        <input id="name" name="name" type="text" class="form-control">
+
+        <label for="age">Age</label>
+        <input id="age" name="age" type="number" class="form-control">
+
+        <label for="strength">Strength</label>
+        <select id="skill" name="heroskill">
+           <option>Lightning<option>
+           <option>Flying<option>
+           <option>Smashing<option>
+         </select>
+        <input id="strength" name="strength" type="text" class="form-control">
+
+        <label for="weakness">Weakness</label>
+        <select id="skill" name="heroskill">
+           <option>Fainting<option>
+           <option>Non stop bleeding<option>
+           <option>Uncontrollable<option>
+         </select>
+        <input id="weakness" name="weakness" type="text" class="form-control">
+
+        <button type="submit" class="btn btn-success"> Add Hero</button>
+    </form>
+</div>
