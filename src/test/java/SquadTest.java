@@ -9,10 +9,4 @@ public class SquadTest {
         assertEquals(true, myHero instanceof Hero);
     }
 
-    @Test
-    public void Squad_instantiatesWithDescription_String() {
-        Hero myHero = new Hero("A very charismatic superhero");
-        assertEquals("A very charismatic superhero", myHero.getDescription());
-    }
-
 }
