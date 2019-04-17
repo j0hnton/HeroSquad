@@ -7,9 +7,9 @@ This is a web application which lets you choose and recruit super heroes.
 Run the application in a browser using localhost:4567
 The github user is then displayed.
 ## BDD
-| INPUT                             | BEHAVIOUR                               | OUTPUT                                                        |
-|-----------------------------------|-----------------------------------------|---------------------------------------------------------------|
-| A superhero is selected.          | The information is processed.           | The hero is assigned in a squad.                              |
+| INPUT                             | BEHAVIOUR                               | OUTPUT                               |
+|-----------------------------------|-----------------------------------------|--------------------------------------|
+| A superhero is selected.          | The information is processed.           | The hero is assigned in a squad.     |
 
 ## Known Bugs
 Currently, there are no known bugs.
