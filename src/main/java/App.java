@@ -74,13 +74,11 @@ public class App {
                 request.session().attribute("squads", squads);
             }
 
-            String squadId = request.queryParams("heroskill");
-            String name = request.queryParams("name");
-            String max= request.queryParams("max");
-            String strength= request.queryParams("heroskill");
-            String heroname= request.queryParams("heroname");
 
-            Squad newHero = new Squad(name,squadId,max,strength,heroname);
+            String name = request.queryParams("name");
+            String gender= request.queryParams("gender");
+
+            Squad newHero = new Squad(name,gender);
             squads.add(newHero);
 
             model.put("template", "public/templates/Squadsuccess.vtl");

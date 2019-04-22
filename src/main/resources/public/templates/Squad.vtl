@@ -1,54 +1,24 @@
- <h1>SQUAD</h1>
+ <h1>STYLISTS</h1>
     <form action="/squads" method="post">
 
-        <label for="name">Squad Name</label>
+        <label for="name">Stylist Name</label>
         <input id="name" name="name" type="text" class="form-control">
-        <label for="max">Maximum Number</label>
-        <input id="max" name="max" type="number" class="form-control">
-        <label for="strength">Aim</label>
-         <select id="heroskill" name="heroskill">
-              <option>Fight Sexism<option>
-              <option>Fight computer illiteracy<option>
-               <option>Fight corruption<option>
-         </select>
+         <label for="gender">Gender</label>
+         <select id="gender" name="gender">
+              <option>Male<option>
+              <option>Female<option>
+        </select>
           <br>
-          <h1>RECRUIT HERO</h2>
+          <h1>CLIENTS</h2>
           <div class="input-form">
           <form action="/Squadsuccess.vtl" method="post">
-          <input id="squadId" name="squadId" type="hidden" value="$squad.getId()">
-
-          <label for="name">Name</label>
-          <select id="heroname" name="heroname">
-          <option>Thor<option>
-          <option>Superman<option>
-          <option>Hulk<option>
-          <option>Wonderwoman<option>
-          <option>Superwoman<option>
-          <option>Iron man<option>
-          </select>
-          <label for="age">Age</label>
-
-           <label for="strength">Strength</label>
-           <select id="skill" name="heroskill">
-           <option>Lightning<option>
-           <option>Flying<option>
-           <option>Smashing<option>
-           <option>Superpunch<option>
-           <option>Superkick<option>
-           <option>Runnung<option>
-
-         </select>
-
-           <label for="weakness">Weakness</label>
-           <select id="skill" name="heroskill">
-           <option>Fainting<option>
-           <option>Non stop bleeding<option>
-           <option>Uncontrollable<option>
-           <option>Collapsing<option>
-           <option>Smiling<option>
-           <option>Drowsiness<option>
-           </select>
-
+          <label for="name">Client Name</label>
+                 <input id="cname" name="cname" type="text" class="form-control">
+                  <label for="stylist">Choose your stylist</label>
+                  <select id="gender" name="gender">
+                       <option>Male<option>
+                       <option>Female<option>
+                 </select>
         <button  type="submit" class="btn btn-default">Add Squad</button>
     </form>
 </div>
